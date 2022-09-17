@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+}
+
+div.sidebar{
+    float: left;
+    background-color: lightgray;
+    width: 200px;
+    height: 100%;
+    overflow: auto;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+}
+
+a:hover{
+    background-color: blue;
+    color: white;
+}
+
+div.content{
+    float: left;
+    width: calc(100% - 200px);
+    background-color: cadetblue;
+    padding: 1px 16px;
+    height: 100%;
+}
+
+/*.contenidoOpcion {display: none;}
+
+#opcion1:target,
+#opcion2:target,
+#opcion3:target,
+#opcion4:target, {display: block}*/
