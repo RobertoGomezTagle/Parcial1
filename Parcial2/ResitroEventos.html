@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function inicializar(){
+            var miBoton1;
+            miBoton1 = document.getElementById("miBoton1");
+            miBoton1.addEventListener("click", miBoton1Click)
+        }
+
+        function miBoton1Click(){
+            var titulo;
+            titulo = document.getElementById("HOLA");
+            titulo.style.color = "red";
+        }
+    </script>
+    <body onload="inicializar()">
+
+        <h1 id="HOLA">HOLA MUNDO!!!!!</h1>
+        <input type="button" value="Color rojo" id="miBoton1">
+    </body>
+    
+
+    <button id="miBoton1" onclick="alert('Click en Boton 1')">Hola mundo 1</button>
+
+    <button id="miBoton2">Hola mundo 2</button>
+
+    <button id="miBoton3">Hola mundo 3</button>
+
+    <script>
+        document.getElementById("miBoton2").onclick = function() {alert ("Click en Boton2") }
+
+        document.querySelector('#miBoton3').addEventListener("click",miFuncion2);
+        document.querySelector('#miBoton3').addEventListener("click",miFuncion1);
+
+        function miFuncion1() { alert("Click en Boton 3 / Funcion 1");}
+        function miFuncion2() { alert("Click en Boton 3 / Funcion 2");}
+    </script>
+</body>
+</html>
