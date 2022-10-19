@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    background-color: rgb(241, 196, 15);
+    text-align: center;
+    border: 3px solid darkorange;
+    font-size: xx-large;
+}
+
+.cajaVerde{
+    background-color: rgb(88, 214, 141);
+    text-align: center;
+    border: 1px solid darkgreen;
+}
